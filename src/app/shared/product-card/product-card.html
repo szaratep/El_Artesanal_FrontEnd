@@ -1,0 +1,37 @@
+<!--
+  Componente reutilizable: se copia este bloque tantas veces como productos
+  se quieran mostrar. Solo cambian: imagen, categoría, título, descripción y precio.
+-->
+<article class="product-card">
+  <a href="/pages/product-detail/product-detail.html" class="product-card__link">
+
+    <figure class="product-card__figure">
+      <img
+        src="assets/images/CAJA 1010-4.jpeg"
+        alt="Caja decorativa de madera de 10 por 10 centímetros"
+        class="product-card__image"
+      />
+      <span class="product-card__badge">Cajas y bandejas</span>
+    </figure>
+
+    <div class="product-card__body">
+      <h3 class="product-card__title">Caja 10 × 10</h3>
+      <p class="product-card__description">
+        Caja de 10 × 10 cm, perfecta para pequeños detalles, ideal para sorprender con un regalo delicado y especial.
+      </p>
+
+      <div class="product-card__footer">
+        <p class="product-card__price">
+          <span class="product-card__amount">$7.500</span>
+          <span class="product-card__currency">COP</span>
+        </p>
+
+        <button type="button" class="product-card__button">
+          <img src="assets/svg/shopping-cart.svg" alt="" class="product-card__button-icon" />
+          Agregar
+        </button>
+      </div>
+    </div>
+
+  </a>
+</article>

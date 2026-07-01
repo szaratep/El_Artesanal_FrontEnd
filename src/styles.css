@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Manuale:ital,wght@0,300..800;1,300..800&family=Story+Script&display=swap');
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   TOKENS DE DISEÑO
+   ========================================================================== */
+:root {
+  /* Colores de marca */
+  --color-primary: #651600;       /* títulos, botón principal */
+  --color-primary-dark: #87290d;  /* barra de navegación */
+  --color-on-primary: #ffffff;    /* texto sobre fondo oscuro */
+  --color-secondary: #79573f;     /* botón secundario, acentos */
+
+  /* Superficies */
+  --color-bg: #fff2d9;      /* fondo general de la página */
+  --color-surface: #ffffff; /* tarjetas y contenedores */
+
+  /* Texto */
+  --color-text: #211b0b;
+  --color-text-muted: #57423c;
+
+  /* Bordes */
+  --color-border: #e9dedb;
+
+  /* Tipografías */
+  --font-primary: 'Manuale', serif;
+  --font-secondary: 'Manrope', sans-serif;
+}
+
+/* ==========================================================================
+   BOTONES (compartidos entre páginas)
+   ========================================================================== */
+.button {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.button--primary {
+  color: var(--color-on-primary);
+  background-color: var(--color-primary);
+  font-family: var(--font-primary);
+  text-transform: capitalize;
+}
+
+.button--primary:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-4px);
+}
+
+.button--secondary {
+  color: var(--color-secondary);
+  background-color: transparent;
+  border: 2px solid rgb(222 192 184 / 20%);
+  font-family: var(--font-secondary);
+}
+
+.button--secondary:hover {
+  background-color: #eee1c8;
+}
+
+.button--tertiary {
+  padding: 1.2rem 2.4rem;
+  color: var(--color-surface);
+  background-color: var(--color-secondary);
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  border-radius: 0.3rem;
+}
+
+.button--tertiary:hover {
+  transform: translateY(-3px);
+}

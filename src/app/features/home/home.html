@@ -1,0 +1,76 @@
+<main class="home">
+
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">El Artesanal <br>Diseño &amp; Arte</h1>
+      <p class="hero__paragraph">
+        Somos fabricantes de artesanías únicas, diseñadas a tu estilo mediante el uso de herramientas digitales.
+        Creamos piezas personalizadas con grabados en madera, así como productos en acrílico y otros materiales,
+        siempre con un acabado impecable y de alta calidad.
+      </p>
+
+      <div class="hero__actions">
+        <a href="/pages/products/products.html" class="button button--primary">Ver catálogo</a>
+        <a href="/pages/customized/customized.html" class="button button--secondary">Proyecto especial</a>
+      </div>
+    </div>
+
+    <figure class="hero__figure">
+      <img src="assets/images/homepage1.jpg" alt="Piezas artesanales personalizadas hechas en madera" class="hero__image">
+    </figure>
+  </section>
+
+  <section class="featured">
+    <header class="featured__header">
+      <h2 class="featured__title">Productos destacados</h2>
+      <a href="/pages/products/products.html" class="featured__link">Ver todos los productos →</a>
+    </header>
+
+    <div class="featured__grid">
+      <app-product-card />
+      <app-product-card />
+      <app-product-card />
+      <app-product-card />
+      <app-product-card />
+      <app-product-card />
+      <app-product-card />
+      <app-product-card />
+      <app-product-card />
+      <app-product-card />
+    </div>
+  </section>
+
+  <section class="configurator">
+    <div class="configurator__panel">
+      <h2 class="configurator__title">Configura tu material</h2>
+      <p class="configurator__subtitle">Selecciona la base para tu próximo proyecto</p>
+
+      <ul class="configurator__materials">
+        <li class="configurator__material">
+          <img src="assets/svg/tree-solid-full.svg" alt="" class="configurator__material-icon">
+          <h3 class="configurator__material-name">Madera MDF</h3>
+        </li>
+        <li class="configurator__material">
+          <img src="assets/svg/shapes-solid-full.svg" alt="" class="configurator__material-icon">
+          <h3 class="configurator__material-name">Acrílico</h3>
+        </li>
+        <li class="configurator__material">
+          <img src="assets/images/paper-roll_8393918.png" alt="" class="configurator__material-icon">
+          <h3 class="configurator__material-name">Laminado (color)</h3>
+        </li>
+      </ul>
+
+      <div class="configurator__estimate">
+        <div class="configurator__estimate-info">
+          <h3 class="configurator__estimate-title">Costo estimado de grabado</h3>
+          <p class="configurator__estimate-note">Basado en superficie de 10 × 10 cm</p>
+        </div>
+
+        <p class="configurator__estimate-range">$15.000 - $25.000</p>
+
+        <a href="/pages/customized/customized.html" class="button button--tertiary">Continuar</a>
+      </div>
+    </div>
+  </section>
+
+</main>

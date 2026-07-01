@@ -1,0 +1,229 @@
+@import './../../../styles.css';
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.6rem 3.2rem;
+  background-color: var(--color-primary-dark);
+}
+
+.site-header__logo {
+  display: block;
+  width: 12rem;
+}
+
+.site-header__logo-img {
+  display: block;
+  width: 100%;
+}
+
+/* El checkbox real queda oculto; solo se usa como "interruptor" de estado */
+.site-header__toggle-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.site-header__toggle {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.site-header__toggle-icon,
+.site-header__toggle-icon::before,
+.site-header__toggle-icon::after {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-on-primary);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.site-header__toggle-icon {
+  position: relative;
+  top: 50%;
+}
+
+.site-header__toggle-icon::before,
+.site-header__toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.site-header__toggle-icon::before {
+  top: -9px;
+}
+
+.site-header__toggle-icon::after {
+  top: 9px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  list-style: none;
+}
+
+.site-nav__link {
+  font-size: 2.5rem;
+  color: var(--color-on-primary);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.site-nav__link:hover,
+.site-nav__link--active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  opacity: 0.75;
+}
+
+.site-nav__actions {
+  display: none;
+  list-style: none;
+}
+
+.site-nav__backdrop {
+  display: none;
+}
+
+.site-header__icons {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+.site-header__icon-img {
+  display: block;
+  width: 3rem;
+}
+
+/* ==========================================================================
+   MENÚ MÓVIL — controlado por :checked, sin JavaScript
+   ========================================================================== */
+@media (max-width: 820px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .site-header__toggle {
+    display: block;
+    order: 3;
+  }
+
+  .site-header__icons {
+    display: none;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    height: 100dvh;
+    padding: 8rem 2.4rem 2.4rem;
+    background-color: var(--color-primary-dark);
+    clip-path: circle(0px at 0% 0%);
+    transition: clip-path 0.4s ease;
+    pointer-events: none;
+    order: 2;
+  }
+
+  .site-header__toggle-input:checked ~ .site-nav {
+    clip-path: circle(1500px at 0% 0%);
+    pointer-events: all;
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .site-nav__item {
+    padding: 1.2rem 0;
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+  }
+
+  .site-nav__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 2rem;
+    margin-top: auto;
+    border-top: 1px solid rgb(255 255 255 / 15%);
+  }
+
+  .site-nav__action-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 0;
+    color: var(--color-on-primary);
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(255 255 255 / 8%);
+  }
+
+  .site-nav__action-link:last-child {
+    border-bottom: none;
+  }
+
+  .site-nav__action-icon {
+    width: 2.4rem;
+    filter: brightness(0) invert(1);
+  }
+
+  /* Fondo oscuro clicable para cerrar el menú al tocar fuera de él */
+  .site-nav__backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 98;
+    display: block;
+    background-color: rgb(0 0 0 / 40%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .site-header__toggle-input:checked ~ .site-nav__backdrop {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /* El ícono ☰ se transforma en ✕ cuando el menú está abierto */
+  .site-header__toggle-input:checked ~ .site-header__toggle .site-header__toggle-icon {
+    background-color: transparent;
+  }
+
+  .site-header__toggle-input:checked ~ .site-header__toggle .site-header__toggle-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .site-header__toggle-input:checked ~ .site-header__toggle .site-header__toggle-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
