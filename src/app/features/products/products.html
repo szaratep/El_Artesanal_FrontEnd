@@ -1,0 +1,138 @@
+<main class="products-page">
+
+  <section class="intro">
+    <h1 class="intro__title">Nuestros productos</h1>
+    <p class="intro__description">
+      Explora nuestros productos para toda ocasión, diseñados especialmente para momentos únicos
+      como el Día de la Madre, el Día del Padre y muchas celebraciones más.
+    </p>
+  </section>
+
+  <section class="products">
+
+    <!-- Checkbox invisible: controla el panel de filtros en móvil (sin JavaScript) -->
+    <input type="checkbox" id="filters-toggle" class="filters-toggle-input">
+
+    <div class="products-toolbar">
+      <label for="filters-toggle" class="products-toolbar__button">
+        <span class="products-toolbar__icon" aria-hidden="true"></span>
+        Filtrar productos
+      </label>
+    </div>
+
+    <div class="products-layout">
+
+      <aside class="filters">
+        <div class="filters__header">
+          <h2 class="filters__title">Filtros</h2>
+          <button type="reset" form="product-filters" class="filters__clear">Limpiar filtros</button>
+        </div>
+
+        <form id="product-filters" class="filters__form">
+
+          <details class="filters__group" open>
+            <summary class="filters__group-title">Material</summary>
+            <div class="filters__chips">
+              <input type="checkbox" id="filter-mdf" class="filters__chip-input">
+              <label for="filter-mdf" class="filters__chip">MDF</label>
+
+              <input type="checkbox" id="filter-pino" class="filters__chip-input">
+              <label for="filter-pino" class="filters__chip">Pino</label>
+
+              <input type="checkbox" id="filter-acrilico" class="filters__chip-input">
+              <label for="filter-acrilico" class="filters__chip">Acrílico</label>
+
+              <input type="checkbox" id="filter-vinilo" class="filters__chip-input">
+              <label for="filter-vinilo" class="filters__chip">Vinilo</label>
+            </div>
+          </details>
+
+          <details class="filters__group" open>
+            <summary class="filters__group-title">Categoría</summary>
+            <div class="filters__chips">
+              <input type="checkbox" id="filter-hogar" class="filters__chip-input">
+              <label for="filter-hogar" class="filters__chip">Hogar</label>
+
+              <input type="checkbox" id="filter-toda-ocasion" class="filters__chip-input">
+              <label for="filter-toda-ocasion" class="filters__chip">Toda ocasión</label>
+
+              <input type="checkbox" id="filter-dia-hombre" class="filters__chip-input">
+              <label for="filter-dia-hombre" class="filters__chip">Día del hombre</label>
+
+              <input type="checkbox" id="filter-dia-mujer" class="filters__chip-input">
+              <label for="filter-dia-mujer" class="filters__chip">Día de la mujer</label>
+
+              <input type="checkbox" id="filter-dia-madre" class="filters__chip-input">
+              <label for="filter-dia-madre" class="filters__chip">Día de la madre</label>
+
+              <input type="checkbox" id="filter-dia-padre" class="filters__chip-input">
+              <label for="filter-dia-padre" class="filters__chip">Día del padre</label>
+
+              <input type="checkbox" id="filter-15" class="filters__chip-input">
+              <label for="filter-15" class="filters__chip">15 años</label>
+
+              <input type="checkbox" id="filter-grado" class="filters__chip-input">
+              <label for="filter-grado" class="filters__chip">Grados</label>
+            </div>
+          </details>
+
+          <details class="filters__group">
+            <summary class="filters__group-title">Producto</summary>
+            <div class="filters__chips">
+              <input type="checkbox" id="filter-bandeja" class="filters__chip-input">
+              <label for="filter-bandeja" class="filters__chip">Bandejas</label>
+
+              <input type="checkbox" id="filter-portarretratos" class="filters__chip-input">
+              <label for="filter-portarretratos" class="filters__chip">Portarretratos</label>
+
+              <input type="checkbox" id="filter-cajas" class="filters__chip-input">
+              <label for="filter-cajas" class="filters__chip">Cajas</label>
+
+              <input type="checkbox" id="filter-portacelulares" class="filters__chip-input">
+              <label for="filter-portacelulares" class="filters__chip">Portacelulares</label>
+            </div>
+          </details>
+
+          <details class="filters__group" open>
+            <summary class="filters__group-title">Precio</summary>
+            <div class="filters__price">
+              <input type="range" min="0" max="150000" step="5000" value="150000" class="filters__range" id="price-range" aria-describedby="price-range-labels">
+              <div class="filters__price-labels" id="price-range-labels">
+                <span>$0 COP</span>
+                <span>$150.000+ COP</span>
+              </div>
+            </div>
+          </details>
+
+        </form>
+      </aside>
+
+      <!-- Fondo clicable para cerrar el panel de filtros en móvil -->
+      <label for="filters-toggle" class="filters-backdrop" aria-hidden="true"></label>
+
+      <div class="products-layout__results">
+
+        <div class="products-grid">
+            <app-product-card />
+            <app-product-card />
+            <app-product-card />
+            <app-product-card />
+            <app-product-card />
+            <app-product-card />
+
+        </div>
+
+        <nav class="pagination" aria-label="Paginación de productos">
+          <ul class="pagination__list">
+            <li><a href="#" class="pagination__link pagination__link--active" aria-current="page">1</a></li>
+            <li><a href="#" class="pagination__link">2</a></li>
+            <li><a href="#" class="pagination__link">3</a></li>
+            <li><a href="#" class="pagination__link pagination__link--next" aria-label="Página siguiente">›</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </section>
+
+</main>

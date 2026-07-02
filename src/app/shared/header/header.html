@@ -1,6 +1,6 @@
 <header class="site-header">
 
-  <a href="/pages/home/home.html" class="site-header__logo" aria-label="Ir al inicio">
+  <a routerLink="/home" class="site-header__logo" aria-label="Ir al inicio">
     <img src="assets/images/logo_el_arte_sas.png" alt="El Artesanal S.A.S." class="site-header__logo-img">
   </a>
 
@@ -14,13 +14,13 @@
   <nav class="site-nav">
     <ul class="site-nav__list">
       <li class="site-nav__item">
-        <a href="/pages/home/home.html" class="site-nav__link site-nav__link--active">Inicio</a>
+        <a routerLink="/home" routerLinkActive="site-nav__link--active" class="site-nav__link">Inicio</a>
       </li>
       <li class="site-nav__item">
-        <a href="/pages/products/products.html" class="site-nav__link">Productos</a>
+        <a routerLink="/products" routerLinkActive="site-nav__link--active" class="site-nav__link">Productos</a>
       </li>
       <li class="site-nav__item">
-        <a href="/pages/customized/customized.html" class="site-nav__link">Personalizados</a>
+        <a routerLink="/customized" routerLinkActive="site-nav__link--active" class="site-nav__link">Personalizados</a>
       </li>
       <li class="site-nav__item">
         <a href="/pages/contact/contact.html" class="site-nav__link">Contacto</a>

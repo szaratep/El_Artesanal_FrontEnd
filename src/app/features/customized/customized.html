@@ -1,0 +1,148 @@
+<main class="customized-page">
+
+  <section class="customized-hero">
+    <div class="customized-hero__content">
+      <h1 class="customized-hero__title">Proyectos a <br><span class="customized-hero__highlight">tu medida</span></h1>
+      <p class="customized-hero__description">
+        Elevamos tus ideas del papel a la realidad física con la precisión milimétrica del láser. Desde mobiliario
+        de autor hasta detalles corporativos, cada pieza es tratada como una obra de arte única.
+      </p>
+      <a href="#form-cotizacion" class="button button--primary">Iniciar proyecto</a>
+    </div>
+
+    <figure class="customized-hero__figure">
+      <img src="assets/images/customized1.JPG" alt="Pieza personalizada en proceso de grabado láser" class="customized-hero__image">
+      <blockquote class="customized-hero__quote">
+        “La precisión es el lenguaje del alma artesana.”
+      </blockquote>
+    </figure>
+  </section>
+
+  <section class="process">
+    <header class="process__header">
+      <h2 class="process__title">El camino de la creación</h2>
+    </header>
+
+    <ol class="process__steps">
+      <li class="process__step">
+        <img src="assets/svg/lightbulb.svg" alt="" class="process__icon">
+        <h3 class="process__step-title">La idea</h3>
+        <p class="process__step-description">
+          Compartes tu visión, bocetos o archivos digitales con nuestro equipo de diseño.
+        </p>
+      </li>
+
+      <li class="process__step">
+        <img src="assets/svg/texture.svg" alt="" class="process__icon">
+        <h3 class="process__step-title">Materiales</h3>
+        <p class="process__step-description">
+          Seleccionamos maderas nobles, acrílicos premium o metales según la necesidad estética.
+        </p>
+      </li>
+
+      <li class="process__step">
+        <img src="assets/svg/extension.svg" alt="" class="process__icon">
+        <h3 class="process__step-title">Prototipo</h3>
+        <p class="process__step-description">
+          Creamos una muestra digital o física para asegurar que cada ángulo sea perfecto.
+        </p>
+      </li>
+
+      <li class="process__step">
+        <img src="assets/svg/precision-manufacturing.svg" alt="" class="process__icon">
+        <h3 class="process__step-title">Realidad</h3>
+        <p class="process__step-description">
+          Ejecutamos el grabado y corte final con acabados manuales de alta gama.
+        </p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="gallery">
+    <header class="gallery__header">
+      <h2 class="gallery__title">Galería de trabajos especiales</h2>
+    </header>
+
+    <div class="gallery__grid">
+      <figure class="gallery__item gallery__item--a">
+        <img src="assets/images/customized2.PNG" alt="Detalle de proyecto personalizado en madera" class="gallery__image">
+      </figure>
+      <figure class="gallery__item gallery__item--b">
+        <img src="assets/images/customized3.PNG" alt="Detalle de proyecto personalizado grabado" class="gallery__image">
+      </figure>
+      <figure class="gallery__item gallery__item--c">
+        <img src="assets/images/customized4.PNG" alt="Pieza personalizada de gran formato" class="gallery__image">
+      </figure>
+      <figure class="gallery__item gallery__item--d">
+        <img src="assets/images/customized5.jpg" alt="Detalle de acabado en acrílico" class="gallery__image">
+      </figure>
+      <figure class="gallery__item gallery__item--e">
+        <img src="assets/images/customized6.PNG" alt="Detalle de proyecto corporativo personalizado" class="gallery__image">
+      </figure>
+    </div>
+
+    <div class="gallery__callout">
+      <div class="gallery__callout-text">
+        <h3 class="gallery__callout-title">¿Buscas algo diferente?</h3>
+        <p class="gallery__callout-description">
+          Trabajamos sobre materiales experimentales y combinamos técnicas tradicionales con tecnología de punta.
+        </p>
+      </div>
+      <figure class="gallery__callout-figure">
+        <img src="assets/images/customized7.jpg" alt="Material experimental usado en proyectos personalizados" class="gallery__callout-image">
+      </figure>
+    </div>
+  </section>
+
+  <section class="quote-form" id="form-cotizacion">
+    <p class="quote-form__eyebrow">Solicitud de cotización</p>
+    <h2 class="quote-form__title">Cuéntanos tu visión</h2>
+
+    <form class="quote-form__form" action="">
+
+      <div class="form-field">
+        <label for="full-name" class="form-field__label">Nombre completo</label>
+        <input type="text" name="fullName" id="full-name" class="form-field__input">
+      </div>
+
+      <div class="form-field">
+        <label for="phone-number" class="form-field__label">Número telefónico</label>
+        <input type="tel" name="phoneNumber" id="phone-number" class="form-field__input">
+      </div>
+
+      <fieldset class="form-field form-field--fieldset">
+        <legend class="form-field__label">Material de interés</legend>
+        <div class="material-chips">
+          <input type="radio" name="material" id="material-madera" class="material-chips__input" checked>
+          <label for="material-madera" class="material-chips__chip">Madera</label>
+
+          <input type="radio" name="material" id="material-acrilico" class="material-chips__input">
+          <label for="material-acrilico" class="material-chips__chip">Acrílico</label>
+
+          <input type="radio" name="material" id="material-pino" class="material-chips__input">
+          <label for="material-pino" class="material-chips__chip">Pino</label>
+
+          <input type="radio" name="material" id="material-laminado" class="material-chips__input">
+          <label for="material-laminado" class="material-chips__chip">Laminado</label>
+
+          <input type="radio" name="material" id="material-otro" class="material-chips__input">
+          <label for="material-otro" class="material-chips__chip">Otro</label>
+        </div>
+      </fieldset>
+
+      <div class="form-field">
+        <label for="description" class="form-field__label">Descripción del proyecto</label>
+        <textarea name="description" id="description" class="form-field__input form-field__input--textarea" rows="4"></textarea>
+      </div>
+
+      <label for="project-file" class="dropzone">
+        <input type="file" accept="image/*" id="project-file" class="dropzone__input">
+        <p class="dropzone__title">Haz clic o arrastra una imagen aquí</p>
+        <p class="dropzone__hint">PNG, JPG, WEBP — máx. 5MB</p>
+      </label>
+
+      <button type="submit" class="button button--primary quote-form__submit">Enviar consulta</button>
+    </form>
+  </section>
+
+</main>
