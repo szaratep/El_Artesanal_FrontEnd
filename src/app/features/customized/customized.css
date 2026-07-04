@@ -252,7 +252,7 @@
 
 .gallery__callout-figure {
   flex-shrink: 0;
-  width: 160px;
+  width: 60%;
   height: 160px;
   overflow: hidden;
   border-radius: 1.2rem;

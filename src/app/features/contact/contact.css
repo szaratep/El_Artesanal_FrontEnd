@@ -2,7 +2,6 @@
 
 .contact-page {
   background-color: var(--color-surface);
-  height: 100%;
 }
 
 /* ==========================================================================
@@ -152,14 +151,15 @@
    MAPA
    ========================================================================== */
 .maps {
-  position: relative;
+  height: 100%;
   width: 85%;
-  margin: 60px auto;
+  margin: auto;
+  padding: 60px;
 }
 
 .maps__container {
   position: relative;
-  height: 600px;
+  height: 700px;
 }
 
 .maps__iframe {
