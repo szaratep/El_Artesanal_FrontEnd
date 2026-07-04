@@ -5,6 +5,7 @@ export const routes: Routes = [
     {path: 'products', loadComponent: () => import('./features/products/products')},
     {path: 'customized', loadComponent: () => import('./features/customized/customized')},
     {path: 'contact', loadComponent: () => import('./features/contact/contact'),},
+    {path: 'cart', loadComponent: () => import('./features/cart/cart')},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];

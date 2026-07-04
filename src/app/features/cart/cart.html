@@ -1,0 +1,62 @@
+<main class="cart-main">
+
+  <div class="cart-title-block">
+    <h1 class="cart-title">Tu carrito</h1>
+    <div class="cart-title-line"></div>
+  </div>
+
+  <div class="cart-layout">
+
+    <section class="cart-items">
+      <!--
+        Cada producto del carrito se renderiza con el componente reutilizable CartItem.
+        En la app real este bloque se recorre con *ngFor, por ejemplo:
+          <app-cart-item *ngFor="let item of cartItems" [item]="item" />
+      -->
+      <app-cart-item />
+      <app-cart-item />
+      <app-cart-item />
+      <app-cart-item />
+      <app-cart-item />
+      <app-cart-item />
+
+
+      <a class="cart-back" href="/pages/products/products.html">← Seguir comprando</a>
+    </section>
+
+    <aside class="cart-summary">
+
+      <div class="summary-box">
+        <h2 class="summary-box__title">Resumen del pedido</h2>
+
+        <div class="summary-row">
+          <span class="summary-row__label">Subtotal</span>
+          <span class="summary-row__value">$27.500 <span class="summary-row__currency">COP</span></span>
+        </div>
+
+        <div class="summary-row">
+          <span class="summary-row__label">Envío</span>
+          <span class="summary-row__value summary-row__value--muted">Calculado en el checkout</span>
+        </div>
+
+        <div class="summary-total">
+          <span class="summary-total__label">Total</span>
+          <span class="summary-total__value">$27.500 <span class="summary-total__currency">COP</span></span>
+        </div>
+
+        <a href="/pages/checkout/checkout.html" class="button button--primary btn-checkout">Finalizar compra</a>
+
+        <div class="summary-badges">
+          <p class="summary-badge">✅ Garantía de precisión digital</p>
+          <p class="summary-badge">📦 Envíos asegurados a todo Colombia</p>
+        </div>
+      </div>
+
+      <div class="payment-note">
+        <span class="payment-note__icons" aria-hidden="true">💳 🔒</span>
+        <p class="payment-note__text">Pagos seguros y encriptados</p>
+      </div>
+
+    </aside>
+  </div>
+</main>
