@@ -1,0 +1,60 @@
+<main class="auth-page">
+  <div class="auth">
+
+    <figure class="auth__visual">
+      <img src="assets/images/log_in-Register.jpg" alt="Detalle de grabado láser artesanal" class="auth__visual-img">
+      <div class="auth__visual-overlay">
+        <h2 class="auth__visual-title">La maestría del hilo láser.</h2>
+        <p class="auth__visual-slogan">
+          Cada trazo es una decisión, cada grabado es una herencia. Bienvenido a la era de la precisión artesanal.
+        </p>
+      </div>
+    </figure>
+
+    <div class="auth__panel">
+      <h1 class="auth__title">Bienvenido de nuevo</h1>
+      <p class="auth__subtitle">Inicia sesión para continuar con tus proyectos.</p>
+
+      <form class="auth-form" action="">
+
+        <label class="auth-form__label" for="identifier">Correo electrónico o nickname</label>
+        <input
+          class="auth-input"
+          type="text"
+          id="identifier"
+          name="identifier"
+          placeholder="tu@ejemplo.com o tu_nickname"
+          minlength="3"
+          maxlength="50"
+          required
+        >
+
+        <div class="auth-password-row">
+          <label class="auth-form__label" for="password">Contraseña</label>
+          <a class="auth-forgot-link" href="/pages/forgot-password/forgot-password.html">¿Olvidaste tu contraseña?</a>
+        </div>
+        <input
+          class="auth-input"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="••••••••"
+          required
+        >
+
+        <div class="auth-checkbox-row">
+          <input type="checkbox" id="stay-logged-in" name="stayLoggedIn">
+          <label for="stay-logged-in">Mantener sesión iniciada</label>
+        </div>
+
+        <button type="submit" class="button button--primary auth-submit">Iniciar sesión</button>
+      </form>
+
+      <div class="auth-switch">
+        <p class="auth-switch__question">¿Aún no tienes una cuenta?</p>
+        <a class="auth-switch__link" href="/pages/register/register.html">Crear cuenta nueva</a>
+      </div>
+    </div>
+
+  </div>
+</main>
