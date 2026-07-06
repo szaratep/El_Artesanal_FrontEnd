@@ -189,7 +189,7 @@ img {
 }
 
 .auth-form__hint {
-  margin: -0.4rem 0 0.8rem;
+  margin-top: 10px;
   font-family: var(--font-secondary);
   font-size: 1.2rem;
   color: var(--color-text-muted);
@@ -359,6 +359,7 @@ img {
 .auth-collapsible__inner {
   min-height: 0;
   overflow: hidden;
+  border: none;
 }
 
 .auth-toggle-input:checked ~ .auth-collapsible {

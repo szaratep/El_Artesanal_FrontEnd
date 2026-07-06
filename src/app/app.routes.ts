@@ -7,6 +7,7 @@ export const routes: Routes = [
     {path: 'contact', loadComponent: () => import('./features/contact/contact'),},
     {path: 'cart', loadComponent: () => import('./features/cart/cart')},
     {path: 'login', loadComponent: () => import('./features/login/login')},
+    {path: 'register', loadComponent: () => import('./features/register/register')},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
