@@ -2,9 +2,7 @@
 /* ==========================================================================
    RESET
    ========================================================================== */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -104,8 +102,6 @@ img {
 .button--tertiary:hover {
   transform: translateY(-3px);
 }
-
-@import './../variables.css';
 
 /* ==========================================================================
    LAYOUT SPLIT: imagen + panel de formulario
