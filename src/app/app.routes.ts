@@ -12,6 +12,7 @@ export const routes: Routes = [
     {path: 'privacy', loadComponent: () => import('./shared/privacy/privacy')},
     {path: 'shipping', loadComponent: () => import('./shared/shipping/shipping')},
     {path: 'faq', loadComponent: () => import('./shared/faq/faq')},
+    {path: 'product/detail', loadComponent: () => import('./shared/product-detail/product-detail')},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];

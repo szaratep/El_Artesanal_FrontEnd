@@ -1,0 +1,114 @@
+<main class="product-detail-page">
+
+  <nav class="breadcrumb" aria-label="Ruta de navegación">
+    <a href="/pages/products/products.html" class="breadcrumb__link">Productos</a>
+    <span class="breadcrumb__sep">›</span>
+    <a href="/pages/products/products.html" class="breadcrumb__link">Cajas y bandejas</a>
+    <span class="breadcrumb__sep">›</span>
+    <span class="breadcrumb__current">Caja 10 × 10</span>
+  </nav>
+
+  <div class="product-hero">
+
+    <div class="gallery">
+      <!-- Radios ocultos: controlan qué imagen se ve, sin JavaScript -->
+      <input type="radio" name="gallery-view" id="view-main" class="gallery__radio" checked>
+      <input type="radio" name="gallery-view" id="view-1" class="gallery__radio">
+      <input type="radio" name="gallery-view" id="view-2" class="gallery__radio">
+
+      <div class="gallery__main">
+        <img class="gallery__main-img gallery__main-img--main" src="assets/images/CAJA 1010-4.jpeg" alt="Caja 10 × 10, vista principal">
+        <img class="gallery__main-img gallery__main-img--1" src="assets/images/CAJA 1010-1.jpeg" alt="Caja 10 × 10, vista 1">
+        <img class="gallery__main-img gallery__main-img--2" src="assets/images/CAJA 1010-2.jpeg" alt="Caja 10 × 10, vista 2">
+      </div>
+
+      <div class="gallery__thumbs">
+        <label for="view-main" class="gallery__thumb">
+          <img class="gallery__thumb-img" src="assets/images/CAJA 1010-4.jpeg" alt="Ver vista principal">
+        </label>
+        <label for="view-1" class="gallery__thumb">
+          <img class="gallery__thumb-img" src="assets/images/CAJA 1010-1.jpeg" alt="Ver vista 1">
+        </label>
+        <label for="view-2" class="gallery__thumb">
+          <img class="gallery__thumb-img" src="assets/images/CAJA 1010-2.jpeg" alt="Ver vista 2">
+        </label>
+      </div>
+    </div>
+
+    <div class="product-info">
+
+      <div class="product-info__intro">
+        <span class="product-info__category">Cajas y bandejas</span>
+        <h1 class="product-info__title">Caja 10 × 10</h1>
+        <p class="product-info__desc">
+          Caja de 10 × 10 cm, perfecta para pequeños detalles, ideal para sorprender con un regalo delicado y
+          especial.
+        </p>
+      </div>
+
+      <div class="config-panel">
+
+        <div class="config-panel__field">
+          <label class="config-panel__label" for="inscripcion">
+            Texto de inscripción (máx. 30 caracteres)
+          </label>
+          <input class="config-panel__input" type="text" id="inscripcion" maxlength="30" placeholder="Ej: Para mamá, con amor...">
+        </div>
+
+        <div class="qty-price-row">
+          <div class="qty-wrapper">
+            <span class="config-panel__label">Cantidad</span>
+            <div class="qty-control">
+              <button class="qty-btn" type="button" aria-label="Disminuir cantidad">−</button>
+              <span class="qty-value">1</span>
+              <button class="qty-btn" type="button" aria-label="Aumentar cantidad">+</button>
+            </div>
+          </div>
+
+          <p class="price-wrapper">
+            <span class="price-wrapper__label">Precio</span>
+            <span class="price-wrapper__value">$7.500</span>
+            <span class="price-wrapper__currency">COP</span>
+          </p>
+        </div>
+
+        <button class="btn-cart" type="button">Agregar al carrito</button>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="specs">
+    <h2 class="specs__title">Especificaciones técnicas</h2>
+    <div class="specs-grid">
+      <div class="spec-card spec-card--wide">
+        <span class="spec-card__label">Materiales</span>
+        <p class="spec-card__value">
+          Caja de 10 × 10 cm elaborada en madera tipo MDF de 2.5 mm, con diseño delineado y corte preciso,
+          presentada en acabado natural para un estilo sencillo y elegante.
+        </p>
+      </div>
+      <div class="spec-card">
+        <span class="spec-card__label">Dimensiones</span>
+        <p class="spec-card__value">10 × 10 × 10 cm</p>
+      </div>
+      <div class="spec-card">
+        <span class="spec-card__label">Precisión de grabado</span>
+        <p class="spec-card__value">0.1 mm láser CNC</p>
+      </div>
+      <div class="spec-card">
+        <span class="spec-card__label">Tiempo de producción</span>
+        <p class="spec-card__value">3 a 5 días hábiles</p>
+      </div>
+      <div class="spec-card">
+        <span class="spec-card__label">Tipo de producto</span>
+        <p class="spec-card__value">Personalizable bajo pedido</p>
+      </div>
+      <div class="spec-card">
+        <span class="spec-card__label">Referencia</span>
+        <p class="spec-card__value">CJ1010</p>
+      </div>
+    </div>
+  </section>
+
+</main>
